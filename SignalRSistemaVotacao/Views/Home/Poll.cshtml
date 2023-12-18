@@ -1,0 +1,42 @@
+﻿@page
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            Usuário: <input type="text" id="userInput" />
+        </div>
+        <div class="col-6">&nbsp;</div>
+    </div>
+    <div class="row">Votação: Qual time você torce?&nbsp;</div>
+    <div class="row">
+        <div class="col-12">
+
+            <input type="radio" name="myChannel" id="timeSP" value="Palmeiras" />
+            <label for="palmeiras">Palmeiras</label>
+            <br /><span id="palmeirasBlock"></span><br />
+
+            <input type="radio" name="myChannel" id="cruzeiroMinas" value="Cruzeiro" />
+            <label for="cruzeiro">Cruzeiro</label>
+            <br /><span id="cruzeiroBlock"></span><br />
+
+            <input type="radio" name="myChannel" id="timeNaoTenho" value="Não torço pra nenhum time" />
+            <label for="capMe">Não torço pra nenhum time de futebol.</label>
+            <br /><span id="naopossuoBlock"></span><br />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <input type="button" id="sendButton" value="Vote" />
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/poll.js"></script>
+
